@@ -28,5 +28,16 @@ int main()
 		if((days>=241)&&(days<=365))
 			res=sum+(sum/100*12);			
 	}
+	if(sum>100000)
+	{
+		if((days>=0)&&(days<=30))
+			res=sum-(sum/100*10);
+		if((days>=31)&&(days<=120))
+			res=sum+(sum/100*3);
+		if((days>=121)&&(days<=240))
+			res=sum+(sum/100*8);
+		if((days>=241)&&(days<=365))
+			res=sum+(sum/100*15);			
+	}
 
 }
