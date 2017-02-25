@@ -2,5 +2,6 @@
 
 int main()
 {
+	int sum, days, res;
 
 }
