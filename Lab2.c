@@ -39,5 +39,6 @@ int main()
 		if((days>=241)&&(days<=365))
 			res=sum+(sum/100*15);			
 	}
+	printf("\nResult will be: %d", res);
 
 }
