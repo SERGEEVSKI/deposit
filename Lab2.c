@@ -2,7 +2,7 @@
 
 int main()
 {
-	int sum, days, res;
+	int sum, days, res, dohod;
 	printf("Insert sum, please: ");
 	scanf("%d", &sum);
 	printf("\nInsert days, please: ");
@@ -39,6 +39,8 @@ int main()
 		if((days>=241)&&(days<=365))
 			res=sum+(sum/100*15);			
 	}
+	dohod=res-sum;
 	printf("\nResult will be: %d", res);
-
+	printf("\nDohod will be: %d", dohod);
+	return 0;
 }
