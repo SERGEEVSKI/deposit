@@ -3,15 +3,15 @@
 #include "Deposit.h"
 
 int data_checking(int sum, int days) {
-        while(sum < 10000)
+        if(sum < 10000)
         {
-                printf("\nFailed! Insert please sum not less than 10,000: ");
-                scanf("%d", &sum);
+                printf("\nFailed! Insert please sum not less than 10,000. ");
+		return -1;
         }
-        while(days > 365)
+        if(days > 365)
         {
-                printf("\nFailed! Insert please days no more than 365: ");
-                scanf("%d", &days);
+                printf("\nFailed! Insert please days no more than 365.");
+		return -1;
         }
 	return 0;
 } 
