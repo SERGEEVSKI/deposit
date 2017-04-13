@@ -40,6 +40,5 @@ int calculation_of_contribution(int sum, int days) {
                 if((days>=241)&&(days<=365))
                         res=sum+(sum/100*15);
         }
-        printf("\nResult will be: %d", res);
 	return res;      
 }

@@ -11,5 +11,6 @@ int main()
         printf("\n");
 	data_checking(sum,days);
         calculation_of_contribution(sum,days);
+	printf("\nResult will be: %d", res);
 	return 0;
 }
