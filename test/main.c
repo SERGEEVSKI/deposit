@@ -1,7 +1,7 @@
 #include <stdio.h>
-#include <ctest.h>
 #include "Deposit.h"
 #define CTEST_MAIN
+#include <ctest.h>
 
 int main(int argc, const char **argv)
 {
