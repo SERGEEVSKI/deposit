@@ -2,30 +2,21 @@
 #include <stdlib.h>
 #include "Deposit.h"
 
-Deposit * int_dep_new(size_t initial_size) {
-	Deposit *dep = (Deposit*)malloc(sizeof(Deposit));
-	dep->sum = 0;
-	dep->days = 0;
-	return dep;
-}
-
-int data_checking(Deposit *dep) {
-        while(dep->sum <10000)
+int data_checking(int sum, int days) {
+        while(sum < 10000)
         {
                 printf("\nFailed! Insert please sum not less than 10,000: ");
-                scanf("%zu", &dep->sum);
+                scanf("%d", &sum);
         }
-        while(dep->days >365)
+        while(days > 365)
         {
                 printf("\nFailed! Insert please days no more than 365: ");
-                scanf("%zu", &dep->days);
+                scanf("%d", &days);
         }
 	return 0;
 } 
 
-int calculation_of_contribution(Deposit *dep) {
-	int days = dep->days;
-	int sum = dep->sum;
+int calculation_of_contribution(int sum, int days) {
 	int res = 0;
 	if(sum<=100000)
         {

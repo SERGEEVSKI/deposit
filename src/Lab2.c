@@ -3,15 +3,13 @@
 
 int main()
 {	
-	Deposit *dep;
-	dep = int_dep_new(5);
 	printf("Enter sum, please: ");
-	scanf("%zu", &dep->sum);
+	scanf("%d", sum);
 	printf("\n");
 	printf("Enter days, please: ");
-        scanf("%zu", &dep->days);
+        scanf("%d", &days);
         printf("\n");
-	data_checking(dep);
-        calculation_of_contribution(dep);
+	data_checking(sum,days);
+        calculation_of_contribution(sum,days);
 	return 0;
 }
