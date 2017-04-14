@@ -32,7 +32,7 @@ CTEST(Check_data, test5)
 
 CTEST(Check_data, test6)
 {
-        ASSERT_EQUAL(-1, data_checking(-1, -1));
+        ASSERT_EQUAL(0, data_checking(-1, -1));
 }
 
 //Tests for calculation of contribution
